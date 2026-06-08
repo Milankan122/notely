@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTELY — Capture Ideas. Organize Thoughts. Create More.</title>
+  <meta name="description" content="The note-taking app that thinks like you do. Beautifully simple, surprisingly powerful.">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <div class="announcement-banner" id="announcement-banner">
+    Introducing AI-powered note suggestions
+    <a href="#features">Learn more <span class="material-symbols-outlined" style="font-size:14px;">arrow_forward</span></a>
+    <button class="close-btn" id="banner-close" aria-label="Dismiss">
+      <span class="material-symbols-outlined" style="font-size:16px;">&nbsp&nbspclose</span>
+    </button>
+  </div>
+
+  <nav class="navbar nav-transition" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img src="assets/app-icon.png" alt="NOTELY">
+        NOTELY
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#platform">Templates</a>
+        <a href="#cta">Pricing</a>
+        <div class="nav-divider"></div>
+        <a href="#" class="btn-text">Log in</a>
+        <a href="#cta" class="btn btn-tonal">Get Started</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined theme-icon-swap" id="icon-sun">light_mode</span>
+          <span class="material-symbols-outlined theme-icon-swap hidden" id="icon-moon">dark_mode</span>
+        </button>
+        <button class="btn-icon menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <button class="drawer-close btn-icon" id="drawer-close" aria-label="Close menu">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="drawer-links">
+      <a href="#features">Features</a>
+      <a href="#platform">Templates</a>
+      <a href="#cta">Pricing</a>
+      <a href="#">Log in</a>
+      <a href="#cta">Get Started</a>
+      <button class="btn-icon" id="drawer-theme-toggle" style="margin-top:16px;" aria-label="Toggle theme">
+        <span class="material-symbols-outlined">brightness_medium</span>
+      </button>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title hero-animate hero-animate-d1">Capture ideas. Organize thoughts. Create more.</h1>
+        <p class="hero-subtitle hero-animate hero-animate-d2">The note-taking app that thinks like you do. Beautifully simple, surprisingly powerful. Available on every device.</p>
+        <div class="hero-rating hero-animate hero-animate-d3">
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span>128K+ reviews</span>
+        </div>
+        </br>
+        </br>
+        <div class="hero-cta hero-animate hero-animate-d3">
+          <a href="#cta" class="btn btn-primary btn-lg">Get Started — Free</a>
+          <a href="#platform" class="btn btn-outlined btn-lg">
+            <span class="material-symbols-outlined">play_circle</span>
+            Watch Demo
+          </a>
+        </div>
+        <div class="hero-social-proof hero-animate hero-animate-d4">
+          <span>The Verge</span>
+          <span>PC Mag</span>
+          <span>TechRadar</span>
+        </div>
+      </div>
+      <div class="hero-visual hero-animate hero-animate-d4">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-glow hero-glow-3"></div>
+        <img src="assets/hero-mockup.png" alt="NOTELY app interface showing note editor with sidebar and formatting tools">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="material-symbols-outlined">expand_more</span>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials-grid stagger-children">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Simple, fast, and powerful. The best notes app I've ever used."</p>
+          <p class="testimonial-source">The Verge</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Finally, a note-taking app that gets out of your way."</p>
+          <p class="testimonial-source">PC Mag</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Absolutely world-class design meets serious functionality."</p>
+          <p class="testimonial-source">TechRadar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="features-wrapper">
+        <div class="features-list">
+
+          <div class="feature-block section-animate" data-index="0" data-icon="lightbulb" data-img="assets/feature-1.png">
+            <div class="feature-icon-wrap">
+              <div class="icon-container icon-container-md">
+                <span class="material-symbols-outlined">lightbulb</span>
+              </div>
+              <span class="section-label">Capture</span>
+            </div>
+            <h3>Empty your mind</h3>
+            <p>Capture thoughts the moment they strike. NOTELY is your brain's external hard drive. Use natural language, voice, or quick capture — organize later.</p>
+            <div class="feature-visual-mobile">
+              <img src="assets/feature-1.png" alt="Capture ideas illustration">
+            </div>
+          </div>
+
+          <div class="feature-block section-animate section-animate-delay-1" data-index="1" data-icon="center_focus_strong" data-img="assets/feature-2.png">
+            <div class="feature-icon-wrap">
+              <div class="icon-container icon-container-md">
+                <span class="material-symbols-outlined">center_focus_strong</span>
+              </div>
+              <span class="section-label">Focus</span>
+            </div>
+            <h3>Stay in the zone</h3>
+            <p>Filter noise. Find clarity. Use smart folders, tags, and custom filters to surface exactly what you need, when you need it. Your notes, your way.</p>
+            <div class="feature-visual-mobile">
+              <img src="assets/feature-2.png" alt="Focus illustration">
+            </div>
+          </div>
+
+          <div class="feature-block section-animate section-animate-delay-2" data-index="2" data-icon="folder_copy" data-img="assets/feature-3.png">
+            <div class="feature-icon-wrap">
+              <div class="icon-container icon-container-md">
+                <span class="material-symbols-outlined">folder_copy</span>
+              </div>
+              <span class="section-label">Organize</span>
+            </div>
+            <h3>Simplify your workflow</h3>
+            <p>Nested notebooks, bi-directional links, and powerful search. Structure that bends to how you think, not the other way around.</p>
+            <div class="feature-visual-mobile">
+              <img src="assets/feature-3.png" alt="Organize illustration">
+            </div>
+          </div>
+
+          <div class="feature-block section-animate section-animate-delay-3" data-index="3" data-icon="group" data-img="assets/feature-4.png">
+            <div class="feature-icon-wrap">
+              <div class="icon-container icon-container-md">
+                <span class="material-symbols-outlined">group</span>
+              </div>
+              <span class="section-label">Collaborate</span>
+            </div>
+            <h3>Share and sync</h3>
+            <p>Real-time collaboration with your team. Comments, mentions, and shared workspaces. Everyone stays on the same page, always.</p>
+            <div class="feature-visual-mobile">
+              <img src="assets/feature-4.png" alt="Collaborate illustration">
+            </div>
+          </div>
+
+          <div class="feature-block section-animate section-animate-delay-4" data-index="4" data-icon="extension" data-img="assets/feature-5.png">
+            <div class="feature-icon-wrap">
+              <div class="icon-container icon-container-md">
+                <span class="material-symbols-outlined">extension</span>
+              </div>
+              <span class="section-label">Integrate</span>
+            </div>
+            <h3>Connect your tools</h3>
+            <p>Seamlessly integrates with 50+ apps. Slack, GitHub, Google Calendar, Figma — your notes where you work.</p>
+            <div class="feature-visual-mobile">
+              <img src="assets/feature-5.png" alt="Integrate illustration">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="sticky-summary-wrap">
+          <div class="sticky-summary">
+            <div class="sticky-summary-progress">
+              <div class="sticky-summary-progress-dot" id="summary-progress-dot"></div>
+            </div>
+            <div class="summary-fade in" id="summary-content">
+              <div class="sticky-summary-icon">
+                <span class="material-symbols-outlined">lightbulb</span>
+              </div>
+              <h4 class="sticky-summary-title">Empty your mind</h4>
+              <p class="sticky-summary-desc">Capture thoughts the moment they strike. NOTELY is your brain's external hard drive.</p>
+              <div class="sticky-summary-visual">
+                <img src="assets/feature-1.png" alt="Feature visual">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="platform" id="platform">
+    <div class="container section-animate">
+      <p class="platform-label">Available Everywhere</p>
+      <h2 class="platform-title">Your notes, on every screen</h2>
+      <div class="platform-visual">
+        <img src="assets/devices.png" alt="NOTELY on phone, tablet, and laptop">
+      </div>
+    </div>
+  </section>
+
+  <section class="security">
+    <div class="container section-animate">
+      <div class="security-inner">
+        <div class="security-badge">
+          <span class="material-symbols-outlined">verified_user</span>
+          SOC 2 Type II Certified
+        </div>
+        <p class="security-desc">Enterprise-grade security without the enterprise complexity. Your notes are encrypted at rest and in transit.</p>
+        <a href="#" class="text-link security-link">
+          View our Trust Center
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+    <div class="container section-animate">
+      <h2 class="cta-title">Ready to capture your best ideas?</h2>
+      <p class="cta-subtitle">Join 2 million people who use NOTELY to think clearer and create more.</p>
+      <div class="cta-button-wrap">
+        <a href="#" class="btn btn-primary btn-xl">Get Started — Free Forever</a>
+        <span class="cta-note">No credit card required</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#platform">Templates</a>
+          <a href="#cta">Pricing</a>
+          <a href="#">What's New</a>
+          <a href="#">Roadmap</a>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <a href="#">Blog</a>
+          <a href="#">Help Center</a>
+          <a href="#">Community</a>
+          <a href="#">API Docs</a>
+          <a href="#">Status</a>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Legal</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-column">
+          <h4>Download</h4>
+          <a href="#">Web App</a>
+          <a href="#">iOS</a>
+          <a href="#">Android</a>
+          <a href="#">macOS</a>
+          <a href="#">Windows</a>
+          <a href="#">Linux</a>
+        </div>
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <a href="#">Twitter / X</a>
+          <a href="#">GitHub</a>
+          <a href="#">Discord</a>
+          <a href="#">YouTube</a>
+          <a href="#">Newsletter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div style="display:flex;align-items:center;gap:var(--space-4);">
+          <div class="footer-brand">
+            <img src="assets/app-icon.png" alt="NOTELY">
+            NOTELY
+          </div>
+          <span class="footer-copy">&copy; 2026 Notely, Inc.</span>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
